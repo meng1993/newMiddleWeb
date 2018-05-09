@@ -1,0 +1,131 @@
+$sprite_word_width: 3.57rem;
+$sprite_word_height: .89rem;
+.sentence_box{
+  padding-left: .4rem;
+  .word_total_box{
+    height: .9rem;
+    margin-top: .2rem;
+    .words_total{
+      float: left;
+      width: 3.3rem;
+      height: .74rem;
+      line-height: .74rem;
+      background: -webkit-linear-gradient(left,#b0600b,#c6771b);
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      color: #fff;
+      font-size: .48rem;
+      padding-left: .2rem;
+    }
+  }
+  .sentence_container{
+    position: relative;
+    float: left;
+    width: 16rem;
+    height: 80%;
+    font-size: .15rem;
+    color: #723618;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 0.5rem;
+    .ask_sentence{
+      position: relative;
+      display: inline-block;
+      padding-left: 1rem;
+      color: #7a492f;
+      font-size: .69rem;
+      font-weight: bold;
+      word-break: break-word;
+      span{
+        color: #f85506;
+        word-break: keep-all;
+        padding: .2rem 1rem;
+        border: .04rem dashed #fbba4b;
+        border-radius: .07rem;
+        line-height: 1.9rem;
+      }
+      .audio_img{
+          position: absolute;
+          display: inline-block;
+          width: .93rem;
+          height: .78rem;
+          cursor: pointer;
+          background: url("../../../static/image/courseware/word_sprite.png") 0 0 no-repeat;
+          background-size:$sprite_word_width  $sprite_word_height;
+          left: 0;
+        top: 50%;
+        margin-top: -.39rem;
+      }
+    }
+    .translate{
+      color: #723618;
+      font-size: .57rem;
+      font-weight: 600;
+      margin-top: .67rem;
+      padding-left: 1rem;
+    }
+    .names{
+      width: 100%;
+      height: auto;
+      margin-top: .65rem;
+      padding-left: 1rem;
+      .name_group{
+        float: left;
+        margin-bottom: .4rem;
+        text-align: center;
+        position: relative;
+        margin-right: 1rem;
+        cursor: pointer;
+        p{
+          display: inline-block;
+          color: #7a492f;
+          word-break: break-word;
+          font-size: .55rem;
+          font-weight: bold;
+          padding: .32rem .74rem;
+          background-color: #ffc200;
+          border-radius: .1rem;
+          border-bottom: .07rem solid #ff9500;
+        }
+        .btn_change{
+          position: absolute;
+          display: inline-block;
+          top: .07rem;
+          left: .07rem;
+          width: .3rem;
+          height: .3rem;
+          background: url("../../../static/image/courseware/word_sprite.png") -2.68rem 0 no-repeat;
+          background-size: $sprite_word_width $sprite_word_height;
+        }
+      }
+    }
+    .answer_sentence{
+      position: relative;
+      display: inline-block;
+      padding-left: 1rem;
+      color: #7a492f;
+      font-size: .69rem;
+      font-weight: bold;
+      word-break: break-word;
+      .audio_answer_img{
+        position: absolute;
+        display: inline-block;
+        width: .93rem;
+        height: .78rem;
+        cursor: pointer;
+        background: url("../../../static/image/courseware/word_sprite.png") 0 0 no-repeat;
+        background-size:$sprite_word_width  $sprite_word_height;
+        left: 0;
+        top: 50%;
+        margin-top: -.39rem;
+      }
+    }
+    .answer_translate{
+      color: #723618;
+      font-size: .57rem;
+      font-weight: 600;
+      margin-top: .67rem;
+      padding-left: 1rem;
+    }
+  }
+}

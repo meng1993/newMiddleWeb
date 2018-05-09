@@ -1,0 +1,347 @@
+$spriteWidth : 6.5rem;
+$spriteHeight: .7rem;
+.header{
+  width: 100%;
+  height: 1.12rem;
+  background-color: #b0600a;
+  .header_logo{
+    position: relative;
+    float: left;
+    width: 4.2rem;
+    height: 100%;
+    text-align: right;
+    font-size: .39rem;
+    line-height: 1.12rem;
+    color: #fff;
+    .header_img{
+      position: absolute;
+      width: .6rem;
+      height: .6rem;
+      left: .35rem;
+      top: 50%;
+      margin-top: -.35rem;
+    }
+    .logo_img{
+      position: absolute;
+      display: inline-block;
+      width: 1.16rem;
+      height: .43rem;
+      left: 1.3rem;
+      top: .3rem;
+      background: url("../../static/image/index_sprite.png") 0 0 no-repeat;
+      background-size: $spriteWidth $spriteHeight;
+    }
+  }
+  .class{
+    float: left;
+    width: 5rem;
+    height: 0.8rem;
+    margin: .16rem 0 0 .2rem;
+    padding: 0 .4rem;
+    border-left: 1px solid #fff;
+    color: #fff;
+    .class_name{
+      width: 100%;
+      height: .4rem;
+      line-height: .4rem;
+      font-size: .3rem;
+    }
+    .teach_pattern{
+      width: 100%;
+      height: .4rem;
+      line-height: .4rem;
+      font-size: .24rem;
+      color: #ffdfc2;
+    }
+  }
+  .close_btn{
+    float: right;
+    display: inline-block;
+    width: .69rem;
+    height: .7rem;
+    background: url("../../static/image/index_sprite.png") -1.16rem 0 no-repeat;
+    background-size: $spriteWidth $spriteHeight;
+    margin: .2rem .32rem 0 0;
+    cursor: pointer;
+  }
+  .full_screen{
+    float: right;
+    display: inline-block;
+    width: .7rem;
+    height: .7rem;
+    background: url("../../static/image/index_sprite.png") -1.86rem 0 no-repeat;
+    background-size: $spriteWidth $spriteHeight;
+    margin: .2rem .2rem 0 0;
+    cursor: pointer;
+  }
+  .more_btn{
+    position: relative;
+    float: right;
+    display: inline-block;
+    width: 1.5rem;
+    height: .6rem;
+    text-align: center;
+    line-height: .6rem;
+    color: #734b34;
+    font-size: .35rem;
+    background-color: #fff;
+    border-radius: .3rem;
+    margin: .25rem .32rem 0 0;
+    cursor: pointer;
+    .more_choose{
+      position: absolute;
+      width: 2.6rem;
+      height: 1.55rem;
+      background-color: #fffcf1;
+      border: 2px solid #bd5b00;
+      border-radius: .3rem;
+      top: .8rem;
+      left: -.8rem;
+      padding: .2rem;
+      z-index: 10;
+      cursor: auto;
+      .icon_arrow{
+        position: absolute;
+        width: .3rem;
+        height: .3rem;
+        background-color: #fffcf1;
+        border-radius: .05rem;
+        transform: rotate(45deg);
+        top: -.09rem;
+        right: .8rem;
+      }
+      .per_more_choose{
+        font-size: .35rem;
+        color: #834629;
+        line-height: .55rem;
+        border-bottom: 1px solid #cfa497;
+        position: relative;
+        padding-left: .5rem;
+        padding-bottom: .1rem;
+        cursor: pointer;
+        text-align: left;
+      }
+      .rank_list{
+        i{
+          position: absolute;
+          display: inline-block;
+          width: .29rem;
+          height: .37rem;
+          left: 0;
+          top: .1rem;
+          background: url("../../static/image/index_sprite.png") -5.84rem 0 no-repeat;
+          background-size: $spriteWidth $spriteHeight;
+        }
+      }
+      .group_manage{
+        border-bottom: none;
+        i{
+          position: absolute;
+          display: inline-block;
+          width: .37rem;
+          height: .37rem;
+          left: 0;
+          top: .1rem;
+          background: url("../../static/image/index_sprite.png") -6.13rem 0 no-repeat;
+          background-size: $spriteWidth $spriteHeight;
+        }
+      }
+    }
+  }
+  .nav{
+    float: right;
+    width: 7.8rem;
+    height: .6rem;
+    background-color: #fff;
+    border-radius: .25rem;
+    margin: .25rem .32rem 0 0;
+    cursor: pointer;
+    font-size: .35rem;
+    color: #734b34;
+    .btn_group:nth-child(1){
+      width: 2.1rem;
+    }
+    .btn_group{
+      position: relative;
+      float: left;
+      width: 1.9rem;
+      height: .4rem;
+      line-height: .4rem;
+      margin-top: .1rem;
+      padding-left: .2rem;
+      border-right: 1px solid #d17600;
+      i{
+        display: inline-block;
+        float: left;
+        left: .15rem;
+        top: .04rem;
+      }
+      span{
+        float: left;
+        margin-left: .2rem;
+      }
+    }
+    .search{
+      i{
+        width: .37rem;
+        height: .35rem;
+        background: url("../../static/image/index_sprite.png") -2.56rem 0 no-repeat;
+        background-size: $spriteWidth $spriteHeight;
+      }
+      .search_choose{
+        position: absolute;
+        width: 2.6rem;
+        height: 1.55rem;
+        background-color: #fffcf1;
+        border: 2px solid #bd5b00;
+        border-radius: .3rem;
+        top: .65rem;
+        left: -.4rem;
+        padding: .2rem;
+        z-index: 10;
+        cursor: auto;
+        .icon_arrow{
+          position: absolute;
+          width: .3rem;
+          height: .3rem;
+          background-color: #fffcf1;
+          border-radius: .05rem;
+          transform: rotate(45deg);
+          top: -.09rem;
+          right: .8rem;
+        }
+        .per_search_choose{
+          font-size: .35rem;
+          color: #834629;
+          line-height: .55rem;
+          border-bottom: 1px solid #cfa497;
+          position: relative;
+          padding-left: .5rem;
+          padding-bottom: .1rem;
+          cursor: pointer;
+          text-align: left;
+        }
+        .choose_word{
+          i{
+            position: absolute;
+            display: inline-block;
+            width: .36rem;
+            height: .36rem;
+            left: 0;
+            top: .1rem;
+            background: url("../../static/image/index_sprite.png") -4.06rem 0 no-repeat;
+            background-size: $spriteWidth $spriteHeight;
+          }
+        }
+        .chosen_knowledge{
+          border-bottom: none;
+          i{
+            position: absolute;
+            display: inline-block;
+            width: .33rem;
+            height: .36rem;
+            left: 0;
+            top: .1rem;
+            background: url("../../static/image/index_sprite.png") -4.43rem 0 no-repeat;
+            background-size: $spriteWidth $spriteHeight;
+          }
+        }
+      }
+    }
+    .tour_class{
+      i{
+        width: .34rem;
+        height: .34rem;
+        background: url("../../static/image/index_sprite.png") -2.93rem 0 no-repeat;
+        background-size: $spriteWidth $spriteHeight;
+      }
+    }
+    .remark{
+      i{
+        width: .45rem;
+        height: .43rem;
+        background: url("../../static/image/index_sprite.png") -3.27rem 0 no-repeat;
+        background-size: $spriteWidth $spriteHeight;
+      }
+      .remark_choose{
+        position: absolute;
+        width: 2.6rem;
+        height: 2.2rem;
+        background-color: #fffcf1;
+        border: 2px solid #bd5b00;
+        border-radius: .3rem;
+        top: .65rem;
+        left: -.4rem;
+        padding: .2rem;
+        z-index: 10;
+        cursor: auto;
+        .icon_arrow{
+          position: absolute;
+          width: .3rem;
+          height: .3rem;
+          background-color: #fffcf1;
+          border-radius: .05rem;
+          transform: rotate(45deg);
+          top: -.09rem;
+          right: .8rem;
+        }
+        .per_remark_choose{
+          font-size: .35rem;
+          color: #834629;
+          line-height: .55rem;
+          border-bottom: 1px solid #cfa497;
+          position: relative;
+          padding-left: .5rem;
+          padding-bottom: .1rem;
+          cursor: pointer;
+          text-align: left;
+        }
+        .remark_student{
+          i{
+            position: absolute;
+            display: inline-block;
+            width: .32rem;
+            height: .4rem;
+            left: 0;
+            top: .1rem;
+            background: url("../../static/image/index_sprite.png") -4.77rem 0 no-repeat;
+            background-size: $spriteWidth $spriteHeight;
+          }
+        }
+        .remark_group{
+          i{
+            position: absolute;
+            display: inline-block;
+            width: .38rem;
+            height: .40rem;
+            left: 0;
+            top: .1rem;
+            background: url("../../static/image/index_sprite.png") -5.08rem 0 no-repeat;
+            background-size: $spriteWidth $spriteHeight;
+          }
+        }
+        .remark_set{
+          border-bottom: none;
+          i{
+            position: absolute;
+            display: inline-block;
+            width: .38rem;
+            height: .55rem;
+            left: 0;
+            top: .1rem;
+            background: url("../../static/image/index_sprite.png") -5.46rem 0 no-repeat;
+            background-size: $spriteWidth $spriteHeight;
+          }
+        }
+      }
+    }
+    .pose{
+      i{
+        width: .35rem;
+        height: .35rem;
+        background: url("../../static/image/index_sprite.png") -3.72rem 0 no-repeat;
+        background-size: $spriteWidth $spriteHeight;
+      }
+    }
+  }
+}

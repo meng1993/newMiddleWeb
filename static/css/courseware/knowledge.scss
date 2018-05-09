@@ -1,0 +1,97 @@
+$sprite_word_width: 3.57rem;
+$sprite_word_height: .89rem;
+.knowledge_box{
+  padding-left: .4rem;
+  .word_total_box{
+    height: .9rem;
+    margin-top: .2rem;
+    .words_total{
+      float: left;
+      width: 3.3rem;
+      height: .74rem;
+      line-height: .74rem;
+      background: -webkit-linear-gradient(left,#b0600b,#c6771b);
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      color: #fff;
+      font-size: .48rem;
+      padding-left: .2rem;
+    }
+  }
+  .knowledge_container{
+    position: relative;
+    float: left;
+    width: 16rem;
+    height: 80%;
+    font-size: .15rem;
+    color: #723618;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 0.5rem;
+    margin-left: 1rem;
+    .knowledge_title{
+      font-size: .47rem;
+    }
+    .img_content{
+      .img_video{
+        width: 4.97rem;
+        height: 3.09rem;
+        padding-top: .65rem;
+        margin-left: .1rem;
+        margin-top: .73rem;
+        float: left;
+        background: url("../../../static/image/courseware/video_img.png") 0 0 no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+      }
+      .explain_content{
+        width: 8.2rem;
+        margin-top: .7rem;
+        margin-left: .7rem;
+        display: inline-block;
+        float: left;
+        color: #5b2f18;
+        font-size: .47rem;
+        word-break: break-word;
+      }
+    }
+    .test_list{
+      width: 12rem;
+      height: .96rem;
+      margin-top: .6rem;
+      margin-left: .1rem;
+      //background-color: red;
+      li{
+        width: 3.12rem;
+        height: .96rem;
+        float: left;
+        margin-right: .44rem;
+        line-height: .34rem;
+        text-align: center;
+        color: #ba5723;
+        font-size: .35rem;
+        position: relative;
+        margin-top: 0;
+        background-color: #f5f5f5;
+        border-radius: .1rem;
+        cursor: pointer;
+        .little_video{
+          display: inline-block;
+          width: .62rem;
+          height: .6rem;
+          background: url("../../../static/image/courseware/word_sprite.png") -2.97rem 0 no-repeat;
+          background-size: $sprite_word_width $sprite_word_height;
+          float: left;
+          margin-left: .4rem;
+          margin-top: .18rem;
+        }
+        p{
+          line-height: .96rem;
+          float: left;
+          display: inline-block;
+          margin-left: .1rem;
+        }
+      }
+    }
+  }
+}

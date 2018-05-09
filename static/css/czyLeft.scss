@@ -1,0 +1,279 @@
+$sprite_left_width: 3.49rem;
+$sprite_left_height: 1.12rem;
+.left_box {
+  width: 25vw;
+  height: calc(100vh - 1.12rem);
+  position: absolute;
+  top: 1.12rem;
+  left: 0;
+  background-color: #fffcf2;
+  z-index: 2;
+  box-shadow: 3px 2px 2px #ccc;
+  .fixed {
+    width: 100%;
+    height: 1.1rem;
+    clear: both;
+    border-bottom: 1px solid #eee5c7;
+    div {
+      width: 50%;
+      height: 1.1rem;
+      display: inline-block;
+      float: left;
+      cursor: pointer;
+    }
+    .courseware{
+      .courseware_box{
+        width: 100%;
+        height: 100%;
+      }
+      clear: both;
+      .courseware_icon {
+        display: inline-block;
+        width: .38rem;
+        height: .34rem;
+        float: left;
+        background: url("../../static/image/left_sprite.png") -1.66rem 0 no-repeat;
+        background-size: $sprite_left_width $sprite_left_height;
+        margin-top: .4rem;
+        margin-left: .3rem;
+      }
+      .courseware_icon.default {
+        background: url("../../static/image/left_sprite.png") -2.04rem 0 no-repeat;
+        background-size: $sprite_left_width $sprite_left_height;
+      }
+      p {
+        display: inline-block;
+        width: 2rem;
+        height: .6rem;
+        font-size: .32rem;
+        color: #c59d7c;
+        line-height: .6rem;
+        text-align: left;
+        padding-left: .2rem;
+        /* margin-top: .05rem; */
+        border-right: 1px solid #eee5c7;
+        float: left;
+        margin-top: .3rem;
+      }
+    }
+    .task {
+      .homework_box{
+        width: 100%;
+        height: 100%;
+      }
+      .task_icon {
+        display: inline-block;
+        width: .32rem;
+        height: .41rem;
+        float: left;
+        background: url("../../static/image/left_sprite.png") -2.42rem 0 no-repeat;
+        background-size: $sprite_left_width $sprite_left_height;
+        margin-top: 3.5vh;
+        margin-left: 1.7vw;
+      }
+      .task_icon.default {
+        background: url("../../static/image/left_sprite.png") -2.74rem 0 no-repeat;
+        background-size: $sprite_left_width $sprite_left_height;
+      }
+      p {
+        display: inline-block;
+        width: 2rem;
+        height: .6rem;
+        font-size: .32rem;
+        color: #c59d7c;
+        line-height: .6rem;
+        text-align: left;
+        padding-left: .6vw;
+        /* margin-top: .05rem; */
+        float: left;
+        margin-top: .3rem;
+      }
+    }
+  }
+
+  /*.study_list {
+    width: 100%;
+    height: 8.8rem;*/
+  .course_list {
+    width: 100%;
+    height: 8.8rem;
+    .courseware_list {
+      width: 100%;
+      height: 8.8rem;
+      .selected_box{
+        width: 100%;
+        height: 1rem;
+        padding-top: .2rem;
+        .chose_book {
+          width: 2.8rem;
+          height: .6rem;
+          float: left;
+          border: 1px solid #b0600a;
+          position: relative;
+          margin-left: .28rem;
+          margin-right: .16rem;
+          cursor: pointer;
+          border-radius: .1rem;
+          cursor: pointer;
+          input {
+            width: 2.4rem;
+            height: .55rem;
+            float: left;
+            border-radius: 5px;
+            cursor: pointer;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 10px;
+            font-size: .3rem;
+            position: relative;
+            background-color: #fffcf2;
+          }
+          .point_down {
+            width: .15rem;
+            height: .09rem;
+            margin-top: .25rem;
+            background: url("../../static/image/left_sprite.png") -3.06rem 0 no-repeat;
+            background-size: $sprite_left_width $sprite_left_height;
+            float: left;
+          }
+        }
+        .chose_week {
+          width: 2rem;
+          height: .6rem;
+          text-align: center;
+          line-height: .6rem;
+          border: 1px solid #b0600a;
+          float: left;
+          cursor: pointer;
+          border-radius: .1rem;
+          position: relative;
+          font-size: .3rem;
+          padding-left: 1.5vw;
+          cursor: pointer;
+          span {
+            display: inline-block;
+            float: left;
+          }
+          .point_down {
+            width: .15rem;
+            height: .09rem;
+            margin-top: .25rem;
+            background: url("../../static/image/left_sprite.png") -3.06rem 0 no-repeat;
+            background-size: $sprite_left_width $sprite_left_height;
+            float: left;
+            margin-left: .3rem;
+          }
+        }
+      }
+      .content_box {
+        width: 100%;
+        //height: 7.5rem;
+        height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .list_tip {
+          color: #5b2f18;
+          font-size: .31rem;
+          margin-top: .2rem;
+          margin-bottom: .1rem;
+          padding-left: .2rem;
+          span {
+            float: left;
+            display: inline-block;
+            width: .3rem;
+            height: .3rem;
+            background: url("../../static/image/left_sprite.png") -1.36rem 0 no-repeat;
+            background-size: $sprite_left_width $sprite_left_height;
+            margin-right: .1rem;
+            margin-top: .08rem;
+          }
+        }
+        .list_tip:nth-of-type(2) span {
+          background: url("../../static/image/left_sprite.png") -3.21rem 0 no-repeat;
+          background-size: $sprite_left_width $sprite_left_height;
+        }
+        .content_list {
+          width: 100%;
+          height: auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            border-radius: .2rem;
+            width: 4.5rem;
+            height: 1.6rem;
+            background-color: #fff;
+            cursor: pointer;
+            margin-bottom: .1rem;
+            clear: both;
+            p {
+              display: inline-block;
+              float: left;
+              margin-left: .2rem;
+              font-size: .38rem;
+              line-height: 1.38rem;
+              font-family: Microsoft YaHei;
+              color: #7a492f;
+            }
+            .teaching_content_icon {
+              display: inline-block;
+              width: 1.38rem;
+              height: 1.05rem;
+              margin-left: .6rem;
+              margin-top: .2rem;
+              background: url("../../static/image/left_sprite.png") 0 0 no-repeat;
+              background-size: $sprite_left_width $sprite_left_height;
+              float: left;
+            }
+          }
+          .router-link-exact-active{
+            background-color: #fee8a2;
+          }
+        }
+        .course_list {
+          width: 100%;
+          height: auto;
+          text-align: center;
+          li {
+            display: inline-block;
+            border-radius: .15rem;
+            width: 4.8rem;
+            height: auto;
+            background-color: white;
+            position: relative;
+            cursor: pointer;
+            margin-bottom: .2rem;
+            cursor: pointer;
+            h6 {
+              position: absolute;
+              top: .2rem;
+              left: .06rem;
+              font-size: .3rem;
+            }
+            p {
+              color: #9d6649;
+              font-size: .3rem;
+              margin-left: .44rem;
+              width: 4.24rem;
+              padding-top: .21rem;
+              padding-bottom: .21rem;
+              word-break: break-word;
+              text-align: left;
+            }
+          }
+          .router-link-exact-active{
+            background-color: #fee8a2;
+          }
+        }
+      }
+    }
+    .courseRight {
+      width: 75vw;
+      height: calc(100vh - 1.12rem);
+      position: absolute;
+      top: 0;
+      left: 25vw;
+      z-index: 2;
+    }
+  }
+}
